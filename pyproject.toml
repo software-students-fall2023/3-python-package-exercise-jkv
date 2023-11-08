@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "MoonPhase"
+version = "1.0.0"
+description = "Generate User's MoonPhase and details related to their MoonPhase"
+readme = "README.md"
+keywords = ["python", "package", "build", "tutorial"]
+authors = [{ name = "Jazlene Darrisaw", email = "jtd9853@nyu.edu" },{ name = "Vincent Bai", email = "hb2385@nyu.edu" },{ name = "Kevin Li", email = "wl2260@nyu.edu" },{ name = "Juliann Zhou", email = "kyz224@nyu.edu" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+keywords = ["python", "package", "build", "tutorial", "moon_phases"]
+
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/software-students-fall2023/3-python-package-exercise-jkv"
+
+[project.scripts]
+PyMoon = "PyMoon.__main__:main"
