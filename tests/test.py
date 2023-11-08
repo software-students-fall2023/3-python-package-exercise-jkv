@@ -67,7 +67,7 @@ class TestMoonPhase(unittest.TestCase):
         expected_output = "The Last Quarter Moon appears as another half-lit sphere, but this time with the left side illuminated and the right side in shadow. It symbolizes a time of reflection, reassessment, and forgiveness. It's a period to release remaining burdens and prepare for a new beginning. It's best for reflecting on the past cycle, forgiving yourself and others, and letting go of remaining burdens."
         self.assertEqual(get_life_suggestion(phase), expected_output)
 
-     def test_get_life_suggestion_new_moon(self):
+    def test_get_life_suggestion_new_moon(self):
         phase = 'New Moon'
         expected_output = "This phase is an excellent time to plant metaphorical seeds, set goals for the future, and align with your deepest desires and dreams. The New Moon invites you to embrace new paths and possibilities, offering a fresh slate to write the next chapter of your life. It's best for setting new intentions, planting metaphorical seeds, and beginning new projects. A time for renewal and fresh starts."
         self.assertEqual(get_life_suggestion(phase), expected_output)
