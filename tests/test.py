@@ -1,16 +1,9 @@
 # test_moon_phase.py
 import unittest
-import sys
-import os
-
-# This will add the src directory to the sys.path to allow for importing
-src_path = Path(__file__).parent.parent / 'src'
-
-# Add the src directory to sys.path
-sys.path.append(str(src_path))
 from unittest.mock import patch
+from package import moon_phrases
 
-from package.moon_phases import get_type, get_compatability, get_personality, get_life_suggestion
+#from package.moon_phases import get_type, get_compatability, get_personality, get_life_suggestion
 import datetime
 
 class TestMoonPhase(unittest.TestCase):
