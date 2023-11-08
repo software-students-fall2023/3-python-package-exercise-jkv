@@ -2,8 +2,11 @@
 
 # Team Members
 [Jazlene Darrisaw](https://github.com/Jazlene30)
+
 [Haocheng Bai](https://github.com/VincentBai-dotcom)
+
 [Juliann Zhou](https://github.com/juliannzhou)
+
 [Wenqian Li](https://github.com/kevinli2260)
 
 
