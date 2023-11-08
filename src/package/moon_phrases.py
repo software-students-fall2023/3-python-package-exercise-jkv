@@ -30,7 +30,7 @@ def get_type():
     elif 15.765294 < lunar_day <= 21.147941:
         return "Waning Gibbous"
     elif 21.147941 < lunar_day <= 23.147941:
-        return "Last Quarter"
+        return "Third Quarter"
     elif 23.147941 < lunar_day <= 28.530588:
         return "Waning Crescent"
     elif 28.530588 < lunar_day <= 29.530588:
