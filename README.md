@@ -3,7 +3,7 @@
 
 
 
-### Project Description
+# Project Description
 PyMoon is a module that can calculate your moonphase, based on which it gives you life suggestions, compatibility advices, and personality traits.
 
 ## Features
@@ -26,7 +26,7 @@ Then activate the virtual environment and install the dependencies:
 ## Usage:
 Once you have installed PyMoon, you can use it in your Python code as follows:
 
-# Get Moon Phase
+### Get Moon Phase
 To calculate the moon phase for a given date, use the following code:
 ```
 `from PyMoon.moon_phases import PyMoon`
@@ -36,19 +36,19 @@ moon_phase = PyMoon.get_type() # # This will prompt for a date input in 'YYYY,MM
 print(f"Moon Phase: {moon_phase}")
 ```
 
-# Get personality traits
+### Get personality traits
 To determine the personality traits associated with the specific moon phase:
 ```
 personality = PyMoon.get_personality(moon_phase)
 print(f"Personality: {personality}")
 ```
-# Get compatibility advice
+### Get compatibility advice
 To determine the personality traits associated with the specific moon phase:
 ```
 compatibility = PyMoon.get_compatibility(moon_phase)
 print(f"Compatibility: {compatibility}")
 ```
-# Get life suggestions
+### Get life suggestions
 For life suggestions based on the current moon phase:
 ```
 life_suggestion = PyMoon.get_life_suggestion(moon_phase)
