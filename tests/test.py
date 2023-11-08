@@ -26,10 +26,10 @@ class TestMoonPhase(unittest.TestCase):
         result_phase = get_type()
         self.assertEqual(result_phase, expected_phase)
 
-    # Testing get_compatability with different phases and expected outputs
+   
     def test_get_compatability_new_moon(self):
         phase = 'New Moon'
-        expected_output = 'Full Moon is most compatable with you! The dreamer (new moon) and the doer (full moon) often balance each other out—but the full moon's high-energy vibe could also overpower the new moon's calmer, meditative nature.'  # Expected output for 'Full Moon'
+        expected_output = "Full Moon is most compatable with you! The dreamer (new moon) and the doer (full moon) often balance each other out—but the full moon's high-energy vibe could also overpower the new moon's calmer, meditative nature."
         self.assertEqual(get_compatability(phase), expected_output)
 
     def test_get_compatability_third_quarter(self):
@@ -39,7 +39,7 @@ class TestMoonPhase(unittest.TestCase):
 
     def test_get_compatability_waxing_crescent(self):
         phase = 'Waxing Crescent'
-        expected_output = 'Waning Gibbous is most compatable with you! The rising star (waxing crescent) and the mentor (waning gibbous) share a preference for growth and ease. But in some cases, the thoughtful waning gibbous could grow frustrated with the waxing crescent's carefree curiosity and spontaneity.'
+        expected_output = "Waning Gibbous is most compatable with you! The rising star (waxing crescent) and the mentor (waning gibbous) share a preference for growth and ease. But in some cases, the thoughtful waning gibbous could grow frustrated with the waxing crescent's carefree curiosity and spontaneity."
         self.assertEqual(get_compatability(phase), expected_output)
 
     def test_get_personality_waxing_crescent(self):
