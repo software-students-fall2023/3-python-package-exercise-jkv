@@ -1,9 +1,8 @@
 # test_moon_phase.py
 import unittest
 from unittest.mock import patch
-from package import moon_phrases
 
-#from package.moon_phases import get_type, get_compatability, get_personality, get_life_suggestion
+from package.moon_phrases import get_type, get_compatability, get_personality, get_life_suggestion
 import datetime
 
 class TestMoonPhase(unittest.TestCase):
