@@ -2,7 +2,7 @@
 import unittest
 from unittest.mock import patch
 
-from package.moon_phrases import get_type, get_compatability, get_personality, get_life_suggestion
+from src.package import moon_phases
 import datetime
 
 class TestMoonPhase(unittest.TestCase):
