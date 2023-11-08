@@ -1,6 +1,6 @@
 # test_moon_phase_pytest.py
 from unittest.mock import patch
-from src.package import get_type, get_compatability, get_personality, get_life_suggestion
+from src.package import moon_phases
 import pytest
 
 @pytest.mark.parametrize("input_date,expected_phase", [
