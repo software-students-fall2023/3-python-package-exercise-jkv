@@ -5,9 +5,9 @@ class PyMoon:
     #Source: https://www.omnicalculator.com/everyday-life/moon-phase
     @staticmethod
     def get_type():
-        # Prompt user for their date of birth
-        user_input = input("Enter your date of birth (YYYY,MM,DD): ")
-        
+
+        user_input = input("Enter your date of birth (YYYY,MM,DD): ")   
+
         # Split the input string into components and convert them to integers
         year, month, day = map(int, user_input.split(','))
 
@@ -21,23 +21,32 @@ class PyMoon:
         lunar_day = cycles * 29.53058770576
 
         if 0 < lunar_day <= 1:
-            return "New Moon"
+            moonphase = "New Moon"
+            return moonphase
         elif 1 < lunar_day <= 6.382647:
-            return "Waxing Crescent"
+            moonphase = "Waxing Crescent"
+            return moonphase
         elif 6.382647 < lunar_day <= 8.382647:
-            return "First Quarter"
+            moonphase = "First Quarter"
+            return moonphase
         elif 8.382647 < lunar_day <= 13.765294:
-            return "Waxing Gibbous"
+            moonphase = "Waxing Gibbous"
+            return moonphase
         elif 13.765294 < lunar_day <= 15.765294:
-            return "Full Moon"
+            moonphase = "Full Moon"
+            return moonphase
         elif 15.765294 < lunar_day <= 21.147941:
-            return "Waning Gibbous"
+            moonphase = "Waning Gibbous"
+            return moonphase
         elif 21.147941 < lunar_day <= 23.147941:
-            return "Third Quarter"
+            moonphase = "Third Quarter"
+            return moonphase
         elif 23.147941 < lunar_day <= 28.530588:
-            return "Waning Crescent"
+            moonphase = "Waning Crescent"
+            return moonphase
         elif 28.530588 < lunar_day <= 29.530588:
-            return "New Moon"
+            moonphase = "New Moon"
+            return moonphase
         else:
             return "Invalid lunar day value"
         
