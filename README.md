@@ -32,7 +32,7 @@ To calculate the moon phase for a given date, use the following code:
 from PyMoon.moon_phases import PyMoon
 
 # Get moon phase type
-moon_phase = PyMoon.get_type() # # This will prompt for a date input in 'YYYY,MM,DD' format
+moon_phase = PyMoon.get_type() # This will prompt for a date input in 'YYYY,MM,DD' format
 print(f"Moon Phase: {moon_phase}")
 ```
 
