@@ -29,7 +29,7 @@ Once you have installed PyMoon, you can use it in your Python code as follows:
 ### Get Moon Phase
 To calculate the moon phase for a given date, use the following code:
 ```
-`from PyMoon.moon_phases import PyMoon`
+from PyMoon.moon_phases import PyMoon
 
 # Get moon phase type
 moon_phase = PyMoon.get_type() # # This will prompt for a date input in 'YYYY,MM,DD' format
