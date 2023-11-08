@@ -5,7 +5,7 @@ PyMoon is a module that can calculate your moonphase, based on which it gives yo
 
 To use:
 
-`from moon_phases import PyMoon`
+`from PyMoon.moon_phases import PyMoon`
 
 `PyMoon.get_type()`
 
