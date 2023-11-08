@@ -1,16 +1,43 @@
 import datetime
 
-
+#Source: https://www.omnicalculator.com/everyday-life/moon-phase
 def get_type():
-  user_date = input("Enter your date of birth(YYY,MM,DD): ")
-  phases = ['New Moon', 'Waxing Crescent', 'First QUarter', 'Waxing Gibbous', 'Full Moon',  'Waning Gibbous', 'Third Quarter', 'Waning Crescent']
+    # Prompt user for their date of birth
+    user_input = input("Enter your date of birth (YYYY,MM,DD): ")
+    
+    # Split the input string into components and convert them to integers
+    year, month, day = map(int, user_input.split(','))
 
-  last_nm = (user_date -  datetime.date(2000,1,21)).days
-  cycle = last_nm // 29.53058867
-  phase = cycle % 8
+    # Create a datetime.date object from the provided input
+    user_date = datetime.date(year, month, day)
+    
+    # Calculate the number of days since a known new moon (e.g., 2000-01-06)
+    last_nm = (user_date - datetime.date(2000, 1, 6)).days
+    cycles = last_nm / 29.53058770576
+    cycles = cycles - int(cycles)
+    lunar_day = cycles * 29.53058770576
 
-  return phases[phase]
-
+    if 0 < lunar_day <= 1:
+        return "New Moon"
+    elif 1 < lunar_day <= 6.382647:
+        return "Waxing Crescent"
+    elif 6.382647 < lunar_day <= 8.382647:
+        return "First Quarter"
+    elif 8.382647 < lunar_day <= 13.765294:
+        return "Waxing Gibbous"
+    elif 13.765294 < lunar_day <= 15.765294:
+        return "Full Moon"
+    elif 15.765294 < lunar_day <= 21.147941:
+        return "Waning Gibbous"
+    elif 21.147941 < lunar_day <= 23.147941:
+        return "Last Quarter"
+    elif 23.147941 < lunar_day <= 28.530588:
+        return "Waning Crescent"
+    elif 28.530588 < lunar_day <= 29.530588:
+        return "New Moon"
+    else:
+        return "Invalid lunar day value"
+      
 # Source https://www.wellandgood.com/moon-phase-compatibility/
 def get_compatability(moonphase):
   compatable_list = {
@@ -19,7 +46,7 @@ def get_compatability(moonphase):
     "Waxing Crescent": "Waning Gibbous is most compatable with you! The rising star (waxing crescent) and the mentor (waning gibbous) share a preference for growth and ease. But in some cases, the thoughtful waning gibbous could grow frustrated with the waxing crescent's carefree curiosity and spontaneity.",
     "Waning Gibbous": "Waxing Crescent is most compatable with you! The rising star (waxing crescent) and the mentor (waning gibbous) share a preference for growth and ease. But in some cases, the thoughtful waning gibbous could grow frustrated with the waxing crescent's carefree curiosity and spontaneity.",
     "First Quarter" : "Third Quater is most campatable with you! The activist (first quarter) and the philosopher (third quarter) both have a high tolerance for tension and may lean into conflict. But while the first quarter seeks to produce external change, the third is primarily working through an internal change of heart.",
-    "Third Quater": "First Quarter is most compatable with you! The activist (first quarter) and the philosopher (third quarter) both have a high tolerance for tension and may lean into conflict. But while the first quarter seeks to produce external change, the third is primarily working through an internal change of heart.",
+    "Third Quarter": "First Quarter is most compatable with you! The activist (first quarter) and the philosopher (third quarter) both have a high tolerance for tension and may lean into conflict. But while the first quarter seeks to produce external change, the third is primarily working through an internal change of heart.",
     "Waxing Gibbous": "Waning Crescent is most compatable with you! The thinker (waning crescent) and the coach (waxing gibbous) share an emphasis on transformation, but tensions could arise from the waning crescent's need for internal processing.",
     "Waning Crescent": "Waxing Gibbous is most compatable with you! The thinker (waning crescent) and the coach (waxing gibbous) share an emphasis on transformation, but tensions could arise from the waning crescent's need for internal processing."
   }
@@ -33,7 +60,7 @@ def get_personality(moonphase):
     "Waxing Crescent": "High ambition, Very productive, Disinclined to risks",
     "Waning Gibbous": "Thoughtful, Evaluative, Judgemental",
     "First Quarter" : "Competent, Doer, Restless",
-    "Third Quater": "Faithful, Emotional, Devoted",
+    "Third Quarter": "Faithful, Emotional, Devoted",
     "Waxing Gibbous": "Soothing, Caring, Stickler for perfection",
     "Waning Crescent": "Dreamy and comtemplative, Individualistic, Solitary"
   }
