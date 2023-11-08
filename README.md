@@ -1,6 +1,10 @@
 [![Python package](https://github.com/software-students-fall2023/3-python-package-exercise-jkv/actions/workflows/python-package.yml/badge.svg)](https://github.com/software-students-fall2023/3-python-package-exercise-jkv/actions/workflows/python-package.yml)
 
-
+# Team Members
+[Jazlene Darrisaw](https://github.com/Jazlene30)
+[Haocheng Bai](https://github.com/VincentBai-dotcom)
+[Juliann Zhou](https://github.com/juliannzhou)
+[Wenqian Li](https://github.com/kevinli2260)
 
 
 # Project Description
@@ -32,7 +36,7 @@ To calculate the moon phase for a given date, use the following code:
 from PyMoon.moon_phases import PyMoon
 
 # Get moon phase type
-moon_phase = PyMoon.get_type() # This will prompt for a date input in 'YYYY,MM,DD' format
+moon_phase = PyMoon.get_type() # # This will prompt for a date input in 'YYYY,MM,DD' format
 print(f"Moon Phase: {moon_phase}")
 ```
 
