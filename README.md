@@ -1,6 +1,16 @@
-# Python Package Exercise
+# Description
+PyMoon is a module that can calculate your moonphase, based on which it gives you life suggestions, compatibility advices, and personality traits.
 
-A little exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
+# Set Up
+First install pipenv if it's not installed on your computer. 
+
+`pip install pipenv`
+
+Then activate the virtual environment and install the dependencies:
+
+`pipenv shell`
+
+`pipenv install`
 
 # Testing
 Go to the tests folder and run 

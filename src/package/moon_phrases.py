@@ -50,6 +50,8 @@ def get_compatability(moonphase):
     "Waxing Gibbous": "Waning Crescent is most compatable with you! The thinker (waning crescent) and the coach (waxing gibbous) share an emphasis on transformation, but tensions could arise from the waning crescent's need for internal processing.",
     "Waning Crescent": "Waxing Gibbous is most compatable with you! The thinker (waning crescent) and the coach (waxing gibbous) share an emphasis on transformation, but tensions could arise from the waning crescent's need for internal processing."
   }
+  if moonphase not in compatable_list:
+      return "Invalid moonphase"
   return compatable_list[moonphase]
 
 # Source: https://www.tiktok.com/@shirleywirleyyy/video/7220949870897614122?_r=1&_t=8h8vPvL1Ire
@@ -64,6 +66,8 @@ def get_personality(moonphase):
     "Waxing Gibbous": "Soothing, Caring, Stickler for perfection",
     "Waning Crescent": "Dreamy and comtemplative, Individualistic, Solitary"
   }
+  if moonphase not in personalities:
+      return "Invalid moonphase"
   return personalities[moonphase]
 
 # Source: https://www.slownorth.com/blogs/journal/moon-phase-ritual-guide
@@ -78,5 +82,7 @@ def get_life_suggestion(moonphase):
     "Waxing Gibbous": "The Waxing Gibbous Moon phase represents a time of refinement and preparation. As the Moon continues to grow, and more of its surface is illuminated, our focus shifts from initiating actions to perfecting them. This phase urges us to analyze our progress, make necessary adjustments, and hone our path towards our goals. It's a period to be diligent, detail-oriented, and mindful of the larger picture while remaining committed to our intentions. The Waxing Gibbous phase encourages us to be patient and persistent, as we prepare for the culmination of our efforts in the Full Moon. It's best for refinement and fine-tuning. Focus on adjustments, perseverance, and aligning closer to your intentions.",
     "Waning Crescent": "The Waning Crescent Moon appears as a thin crescent, symbolizing a time of surrender, rest, and healing. It's a period to fully let go, rest, and prepare for the new cycle ahead. It's best for Surrendering to the natural flow of life, resting, and rejuvenating your energy."
   }
+  if moonphase not in suggestions:
+      return "Invalid moonphase"
   return suggestions[moonphase]
 
