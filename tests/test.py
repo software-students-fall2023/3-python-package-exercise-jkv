@@ -1,6 +1,6 @@
 from unittest.mock import patch
 
-from ..src.package import moon_phases
+from package import moon_phases
 import datetime
 
 class TestMoonPhase(unittest.TestCase):
