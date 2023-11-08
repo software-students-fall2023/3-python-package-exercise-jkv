@@ -5,9 +5,9 @@ class PyMoon:
     #Source: https://www.omnicalculator.com/everyday-life/moon-phase
     @staticmethod
     def get_type():
-        # Prompt user for their date of birth
-        user_input = input("Enter your date of birth (YYYY,MM,DD): ")
-        
+        # Get user info for date of birth
+        user_input = input("Enter your date of birth (YYYY,MM,DD): ")   
+
         # Split the input string into components and convert them to integers
         year, month, day = map(int, user_input.split(','))
 
