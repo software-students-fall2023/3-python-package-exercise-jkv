@@ -30,8 +30,30 @@ Then activate the virtual environment and install the dependencies:
 
 `pipenv install`
 
+## Install PyMoon
+To install the PyMoon package, run the following:
+```
+pip install git+https://github.com/software-students-fall2023/3-python-package-exercise-jkv.git
+```
+
 ## Usage:
 Once you have installed PyMoon, you can use it in your Python code as follows:
+
+### Import PyMoon Class
+To access Pymoon class and functions, import the package as follows:
+```
+import PyMoon
+```
+
+Then, you can access all four functions:
+```
+PyMoon.moon_phases
+PyMoon.get_personality
+PyMoon.get_compatibility
+PyMoon.get_life_suggestions
+```
+
+Alternatively, you can also import individual functions as follow:
 
 ### Get Moon Phase
 To calculate the moon phase for a given date, use the following code:
