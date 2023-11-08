@@ -4,13 +4,13 @@ import datetime
 def get_type():
     # Prompt user for their date of birth
     user_input = input("Enter your date of birth (YYYY,MM,DD): ")
-    
+
     # Split the input string into components and convert them to integers
     year, month, day = map(int, user_input.split(','))
 
     # Create a datetime.date object from the provided input
     user_date = datetime.date(year, month, day)
-    
+
     # Calculate the number of days since a known new moon (e.g., 2000-01-06)
     last_nm = (user_date - datetime.date(2000, 1, 6)).days
     cycles = last_nm / 29.53058770576
@@ -37,7 +37,7 @@ def get_type():
         return "New Moon"
     else:
         return "Invalid lunar day value"
-      
+
 # Source https://www.wellandgood.com/moon-phase-compatibility/
 def get_compatability(moonphase):
   compatable_list = {
@@ -79,4 +79,3 @@ def get_life_suggestion(moonphase):
     "Waning Crescent": "The Waning Crescent Moon appears as a thin crescent, symbolizing a time of surrender, rest, and healing. It's a period to fully let go, rest, and prepare for the new cycle ahead. It's best for Surrendering to the natural flow of life, resting, and rejuvenating your energy."
   }
   return suggestions[moonphase]
-
