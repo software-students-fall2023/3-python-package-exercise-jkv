@@ -26,3 +26,6 @@ dependencies = [
 [project.urls]
 "Homepage" = "https://github.com/software-students-fall2023/3-python-package-exercise-jkv.git"
 "Bug Tracker" = "gh repo clone software-students-fall2023/3-python-package-exercise-team-dominators-1/issues"
+
+[project.scripts]
+PyMoon = "PyMoon.__main__:main"
