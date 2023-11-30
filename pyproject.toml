@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "PyMoon"
+version = "0.0.1"
+authors = [
+  { name="Wenqian Li", email="wl2260@nyu.edu" },
+  { name="Haocheng Bai", email="hb2385@nyu.edu" },
+  { name="Jazlene Darrisaw", email="jtd9853@nyu.edu" },
+  { name="Juliann Zhou", email="kyz224@nyu.edu" }
+]
+description = "A package that provide moon phases analysis based on birth date"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pytest"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/software-students-fall2023/3-python-package-exercise-jkv.git"
+"Bug Tracker" = "gh repo clone software-students-fall2023/3-python-package-exercise-team-dominators-1/issues"
+
+[project.scripts]
+PyMoon = "PyMoon.__main__:main"
